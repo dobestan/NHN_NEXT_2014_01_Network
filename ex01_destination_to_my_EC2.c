@@ -13,7 +13,7 @@ int main (int ac, char* av[]) {
   // 크기가 변할 수 있기 때문에 진짜 크기를 알아야한다.
 
   char* input_buffer;
-  char httpget[] = "GET / HTTP/1.1\r\n\r\n";
+  char httpget[] = "GET / HTTP/1.1\r\nHOST: ansuchan.com\r\n\r\n";
 
   input_buffer = malloc (20000);
 
